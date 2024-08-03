@@ -1,7 +1,7 @@
 import React, { Component ,useEffect,useState} from "react";
 import PropTypes from "prop-types";
 import Newsitem from "./Newsitem";
-import async from "hbs/lib/async";
+
 
 
 const News =(props)=> {

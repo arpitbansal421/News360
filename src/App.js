@@ -10,6 +10,7 @@ const News = React.lazy(() => import('./Components/News'));
 
 export class App extends Component {
   apikey = process.env.REACT_APP_NEWS_API="3ecd1a96f939455db8d1aadffaad1a1c";
+  
 
   render() {
     return (
