@@ -9,10 +9,14 @@ const Navbar=React.lazy(()=>import('./Components/Navbar'))
 const News = React.lazy(() => import('./Components/News'));
 
 export class App extends Component {
-  apikey = process.env.REACT_APP_NEWS_API="3ecd1a96f939455db8d1aadffaad1a1c";
-  
+  constructor(props){
+    super(props)
+
+    this.apikey = process.env.REACT_APP_NEWS_API;
+  }
 
   render() {
+    console.log('API KEy',process.env.REACT_APP_NEWS_API)
     return (
       <>
         <div>
